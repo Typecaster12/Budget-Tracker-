@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App | Your daily expense tracker!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- top -->
+        <div class="top">
+            <div class="addBudget">
+                <h2>Budget</h2>
+                <div class="inp1">
+                    <input id="budgetAdd" type="number" placeholder="Enter Your Budget">
+                </div>
+                <button class="btn1">Set Budget!</button>
+            </div>
+
+            <div class="tracker">
+                <h2>Expenses</h2>
+                <div class="inp2">
+                    <input class="expName" type="Text" placeholder="Where Spent">
+                    <input class="exp2 expName" type="number" placeholder="Amount Spent">
+                </div>
+                <button class="btn2 btn1">Add Expense</button>
+            </div>
+        </div>
+
+        <!-- middle  -->
+        <div class="middel">
+            <div class="total">
+                <h2>Total Budget</h2>
+                <span class="totalBudget"></span>
+            </div>
+
+            <div class="expenses total">
+                <h2>Expenses</h2>
+                <span class="expenseBudget"></span>
+            </div>
+
+            <div class="balance total">
+                <h2>Balance</h2>
+                <span class="balanceBudget"></span>
+            </div>
+
+        </div>
+
+        <!-- bottom  -->
+        <div class="bottom">
+            <h2>Expenses List!</h2>
+            <div class="listItems">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
